@@ -22,7 +22,7 @@ Briefly, a cabinet-type classifier using ResNet18 with some simple techniques fo
 
 ### Clone repository:
    ```bash
-   git clone 
+   git clone https://github.com/eldarkr/cabinet_classification.git
    cd classification
    ```
 
