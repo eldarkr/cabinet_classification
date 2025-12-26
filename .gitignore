@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+
+TEST_TASK.md
+annotated_pdfs_and_data/
+processed_data/

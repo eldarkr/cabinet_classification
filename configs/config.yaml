@@ -1,0 +1,57 @@
+random_seed: 42
+
+
+data:
+  # preprocessing
+  crop_padding: 0
+  load_grayscale: true
+
+  transform: basic
+
+  # class_transforms_map:
+
+  raw_data_dir: dataset/annotated_pdfs_and_data
+  crops_dir: dataset/processed_data/crops
+
+  target_categories:
+    - lc:bcabo
+    - lc:bcabocub
+    - lc:wcabo
+    - lc:wcabcub
+    - lc:muscabinso
+
+  val_split: 0.3
+  batch_size: 32
+  image_size: 112
+
+  sampler:
+    enable: true
+
+
+model:
+  name: resnet18
+  num_classes: 5
+  use_class_weights: false
+  save_path: artifacts/models
+  experiment_name: model.pth
+
+
+optimizer:
+  name: adam
+  lr: 0.001
+
+
+training:
+  num_epochs: 10
+  
+  early_stopping:
+    patience: 5
+    min_delta: 0.001
+  
+  fine_tune:
+    strategy: full  # options: frozen, full
+
+
+inference:
+  image_path: "dataset/examples/R0285 Purchase Set_p00004_a0003.png"
+  # image_path: "dataset/processed_data/crops/lc:bcabocub"
