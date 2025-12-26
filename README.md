@@ -79,7 +79,7 @@ You can override any nested parameter in the config this way. This makes it easy
 
 
 ## Results
-*You can see results in `notebooks/result_analysis.ipynb`*.
+*You can see results in [notebooks/result_analysis.ipynb](https://github.com/eldarkr/cabinet_classification/blob/main/notebooks/result_analysis.ipynb).*
 
 **Per-class metrics:**
 
@@ -93,7 +93,7 @@ You can override any nested parameter in the config this way. This makes it easy
 
 
 **Confusion Matrix:**  
-
+<img width="520" height="498" alt="image" src="https://github.com/user-attachments/assets/91aa3df1-9730-4e22-bf4e-a1f255cd5a15" />
 
 The `ResNet18` shows excellent accuracy and performance across all categories on the validation set. As we have a low number of samples in two categories, I would not trust these results completely.
 
